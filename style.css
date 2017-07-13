@@ -60,6 +60,27 @@
 }
 /*********** End Robot Styles **********/
 
+.chatBox {
+	float: right;
+	margin: 5px;
+	padding: 5px;
+	width: 50%;
+	border: 5px solid black;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+.chatMessage {
+	margin: 5px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.chatMessageWrapper .chatMessage {
+	background-color: #DDDDDD;
+	margin: 10px;
+	padding: 10px;
+}
 
 /************ Modal styles  *******************/
 /***** aka "I like it when you call me big popup" *****/
