@@ -132,7 +132,7 @@
     font-weight:lighter;
 }
 
-.arrow-left {
+#arrow-left {
   width:0;
   height:0;
   border-top:15px solid transparent;
@@ -142,7 +142,10 @@
 
 /************ Progress Bar  *******************/
 
-
+.progressBar {
+  margin-left:62%;
+  margin-bottom:2%;
+}
 
 /************ Modal styles  *******************/
 /***** aka "I like it when you call me big popup" *****/
@@ -150,7 +153,7 @@
 .modal {
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 50px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -170,7 +173,7 @@
     height: 50%;
     border: 3px solid #F2FAFF;
     border-radius: 25px;
-    box-shadow: 10px 10px 50px rgba(0,0,0,50);}
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
 
 /*.backgroundModalContainer {
     background-color: #ffffff;
@@ -255,6 +258,38 @@
   font-family:"Roboto Slab",Roboto,serif;
   font-weight:bold;
   font-size:14.7px;
+  color: #009A65;
+  text-align:left;
+}
+
+.lastMessage:hover,
+.help:hover {
+  float:right;
+  border: 0.5px solid #009A65;
+  border-radius: 28px;
+  box-shadow:0px 2px 4px 0px rgba(0,0,0,50);
+  padding: 1%;
+  margin-left:0%;
+  margin-right:12%;
+  background-color: #009A65;
+  font-family:"Roboto Slab",Roboto,serif;
+  font-weight:bold;
+  font-size:14.7px;
+  color: white;
+  text-align:left;
+}
+
+.download {
+  float:right;
+  border: 0.5px solid #009A65;
+  border-radius: 28px;
+  box-shadow:0px 2px 4px 0px rgba(0,0,0,50);
+  padding: 1%;
+  margin-right:4%;
+  background-color: white;
+  font-family:"Roboto Slab",Roboto,serif;
+  font-weight:bold;
+  font-size:8.75px;
   color: #009A65;
   text-align:left;
 }
