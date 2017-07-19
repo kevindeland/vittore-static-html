@@ -11,10 +11,11 @@
 }
 
 .messageWrapper {
-	border: 3px solid #4e92df;
+	border: 3px solid white;
+  background: white;
   border-radius: 25px;
 	padding: 10%;
-  box-shadow: 0px 2px 4px #888888;
+  box-shadow: 0px 2px 4px rgba(0,0,0,50);
 }
 
 .buttonPanel{
@@ -53,6 +54,8 @@
 
 .messageText {
 	background-color: white;
+  font-family:"Roboto",Roboto,serif;
+  font-size:13.5px;
 }
 
 .messageButtons {
@@ -163,6 +166,19 @@
     background-color: rgba(0,0,0,0.65); /* Black w/ opacity */
 }
 
+.inVivoModal {
+    position:absolute; /* Stays in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 57.5%;
+    top: 0;
+    width: 25%; /* Width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #F2FAFF; /* Fallback color */
+    background-color: #F2FAFF; /* Black w/ opacity */
+}
+
 /* Modal Content */
 
 .modalContainer {
@@ -190,6 +206,7 @@
 .modalTitle {
   font-size: 24px;
   width:60%;
+  padding:5px;
   font-family: "Roboto Slab",Roboto,serif;
   color:#ffffff;
   background-color:#009A65;
