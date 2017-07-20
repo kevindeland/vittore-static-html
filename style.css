@@ -241,17 +241,6 @@
   border-radius: 10px;
 }
 
-.modalTitleHelp{
-  font-size: 34px;
-  width:100%;
-  padding:5px;
-  font-family: "Roboto Slab",Roboto,serif;
-  text-align:center; /*why is it aligning wierdly? what is this class nested in?*/
-  color:#ffffff;
-  background-color:#009A65;
-  border-radius: 10px;
-}
-
 /* Minimize and Maximize Button Panel */
 .minimize {
     height:18px;
@@ -429,20 +418,33 @@
 .modalContainerHelp {
     background-color: white;
     margin: auto;
-    padding: 20px;
-    width: 80%;
-    height: 50%;
+    padding: 0px;
+    width: 1122px;
+    height: 448px;
     border: 3px solid white;
     border-radius: 25px;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);
 }
 
-.helpModulesPanel {
+.modalTitleHelp{
+  font-size: 34px;
+  width:100%;
+  height:91px;
+  padding:5px;
+  font-family: "Roboto Slab",Roboto,serif;
+  text-align:center; /*why is it aligning wierdly? what is this class nested in?*/
+  color:#ffffff;
+  background-color:#009A65;
+  border-radius: 25px;
+}
 
+
+.helpModulesPanel {
 }
 
 .helpModule {
-
+    margin-top:27px;
+    width:300px;
 }
 
 .topModuleBlue {
@@ -454,20 +456,21 @@
     height: 138px;
     border: 3px solid #EBF2F7;
     border-radius: 10px 10px 0px 0px;
-    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);
 }
 
-.bottomModuleWhite {
+.topModuleWhite {
     float:left;
     background-color: white;
     margin: auto;
     padding: 20px;
     width: 209px;
-    height: 129px;
+    height: 138px;
     border: 3px solid white;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 10px 10px 10px 10px rgba(0,0,0,50);
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);
 }
+
 
 
 
