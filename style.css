@@ -19,12 +19,12 @@
 }
 
 .buttonPanel{
-  margin-right:10%;
+  margin-right:21px;
 }
 
 .buttonWrapper {
   float:right;
-  margin-top:34px;
+  margin-top:32px;
   margin-bottom:5%;
   border: 0.5px solid #009A65;
   border-radius: 10px;
@@ -92,10 +92,12 @@
 
 .chatBox {
 	float: right;
-	margin: 5px;
+  margin-top: 42px;
+  margin-left:50px;
+  margin-right:0px;
 	padding: 5px;
-  margin-top:5%;
-	width: 30%;
+	width: 302px;
+  height:287px;
   background-color:#ffffff;
 	border: 5px solid white;
 	border-radius: 30px;
@@ -114,6 +116,14 @@
   box-shadow: 0px 2px 4px 0px #888888;
 }
 
+.chatMessageAlignVertically {
+  float:right;
+  padding-right:27px;
+  padding-left:14px;
+  padding-top:26px;
+  width:220px;
+}
+
 .chatMessage {
 	float:left;
   margin: 5px;
@@ -128,7 +138,7 @@
   text-align:left;
   margin-top:3px;
 	padding: 4%;
-  width: 70%;
+  width: 218px;
 }
 
 .chatMessageTop{
@@ -212,9 +222,9 @@
 .modalContainer {
     background-color: #EBF2F7;
     margin: auto;
-    padding: 20px;
-    width: 80%;
-    height: 50%;
+    padding: 0px;
+    width: 1122px;
+    height: 401px;
     border: 3px solid #EBF2F7;
     border-radius: 25px;
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
@@ -234,11 +244,14 @@
 .modalTitle {
   font-size: 24px;
   width:60%;
-  padding:5px;
+  padding-left:31px;
+  padding-top:7px;
+  padding-bottom:7px;
   font-family: "Roboto Slab",Roboto,serif;
+  font-weight:200;
   color:#ffffff;
   background-color:#009A65;
-  border-radius: 10px;
+  border-radius: 25px 25px 0px 0px;
 }
 
 /* Minimize and Maximize Button Panel */
@@ -342,7 +355,7 @@
   text-align:left;
 }
 
-.download {
+/*.download {
   float:right;
   border: 0.5px solid #009A65;
   border-radius: 28px;
@@ -355,6 +368,46 @@
   font-size:8.75px;
   color: #009A65;
   text-align:left;
+}*/
+
+.download {
+  float:right;
+  text-shadow:0px 2px 4px 0px rgba(0,0,0,50);
+  padding: 1%;
+  margin-right:4%;
+  background-color: transparent;
+  border: transparent;
+  font-family:"Roboto Slab",Roboto,serif;
+  font-weight:bold;
+  font-size:14px;
+  color: white;
+  text-align:left;
+  text-decoration:underline;
+}
+
+.hideHelper {
+  float:right;
+  text-shadow:0px 2px 4px 0px rgba(0,0,0,50);
+  padding: 1%;
+  margin-right:4%;
+  background-color: transparent;
+  border: transparent;
+  font-family:"Roboto Slab",Roboto,serif;
+  font-weight:bold;
+  font-size:14px;
+  color: #009A65;
+  text-align:left;
+  text-decoration:underline;
+}
+
+.hideHelper:hover,
+.hideHelper:focus {
+  cursor:pointer;
+}
+
+.download:hover,
+.download:focus {
+  cursor:pointer;
 }
 
 .modalRobotContainer {
@@ -478,7 +531,7 @@
     padding-right: 28px;
     padding-bottom:35px;
     padding-top:31px;
-    width: 193px;
+    width: 193spx;
     height: 129px;
     border: 3px solid white;
     border-radius: 0px 0px 10px 10px;
