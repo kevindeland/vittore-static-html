@@ -241,6 +241,17 @@
   border-radius: 10px;
 }
 
+.modalTitleHelp{
+  font-size: 34px;
+  width:100%;
+  padding:5px;
+  font-family: "Roboto Slab",Roboto,serif;
+  text-align:center; /*why is it aligning wierdly? what is this class nested in?*/
+  color:#ffffff;
+  background-color:#009A65;
+  border-radius: 10px;
+}
+
 /* Minimize and Maximize Button Panel */
 .minimize {
     height:18px;
@@ -412,6 +423,52 @@
     font-weight:lighter;
 
 }
+
+/* Help Pop-Up */
+
+.modalContainerHelp {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 80%;
+    height: 50%;
+    border: 3px solid white;
+    border-radius: 25px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
+}
+
+.helpModulesPanel {
+
+}
+
+.helpModule {
+
+}
+
+.topModuleBlue {
+    float:left;
+    background-color: #EBF2F7;
+    margin: auto;
+    padding: 20px;
+    width: 209px;
+    height: 138px;
+    border: 3px solid #EBF2F7;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);}
+}
+
+.bottomModuleWhite {
+    float:left;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    width: 209px;
+    height: 129px;
+    border: 3px solid white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,50);
+}
+
 
 
 
