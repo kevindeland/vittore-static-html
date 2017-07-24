@@ -577,6 +577,10 @@
     box-shadow: 0px 2px 4px 0px rgba(0,0,0,50);
 }
 
+.helpModuleContainer{
+  height:270px;
+}
+
 .modalTitleHelp{
   font-size: 34px;
   width:100%;
