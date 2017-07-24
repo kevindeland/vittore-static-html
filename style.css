@@ -100,6 +100,7 @@
 	border: 5px solid white;
 	border-radius: 30px;
 	box-shadow: 0px 2px 4px 0px #888888;
+  display:block;
 }
 
 .chatBox#inVivo{
@@ -115,7 +116,7 @@
 }
 
 .chatMessageAlignVertically {
-  float:right;
+  float:left;
   padding-right:27px;
   padding-left:14px;
   padding-top:26px;
@@ -177,7 +178,7 @@
 /************ Progress Bar  *******************/
 
 .progressBar {
-  margin-left:62%;
+  margin-left:64.5%;
   margin-bottom:2%;
 }
 
@@ -246,7 +247,7 @@
   padding-top:7px;
   padding-bottom:7px;
   font-family: "Roboto Slab",Roboto,serif;
-  font-weight:200;
+  font-weight:300;
   color:white;
   background-color:#009A65;
   border-radius: 25px 25px 0px 0px;
@@ -411,8 +412,7 @@
 }
 
 .lastMessageInVivo,
-.helpInVivo, .viewBotMessage,
-.viewGraphs {
+.helpInVivo {
   float:right;
   border: 0.5px solid #009A65;
   border-radius: 28px;
@@ -465,7 +465,7 @@
   float:right;
   text-shadow:0px 2px 4px 0px rgba(0,0,0,50);
   padding: 1%;
-  margin-right:4%;
+  margin-right:20px;
   background-color: transparent;
   border: transparent;
   font-family:"Roboto",Roboto,serif;
@@ -473,7 +473,7 @@
   font-size:14px;
   color: #009A65;
   text-align:left;
-  text-decoration:underline,;
+  text-decoration:underline;
 }
 
 .hideHelper:hover,
@@ -521,6 +521,8 @@
   font-size:12px;
   color: #009A65;
   text-align:left;
+  width:132px;
+  height:46px;
 }
 
 #babyBotR {
