@@ -2,14 +2,68 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
+  <!--This is the start of my experimentation with Canvas-->
+  <html charset="utf-8"/>
+  <title>Student Goals  Pop-Up</title>
+  <script type="text/javascript">
+    function draw() {
+      var canvas=document.getElementbyID('progressBar');
+      if (canvas.getContext) {
+        var ctx=canvas.getContext('2d');
+      }
+    }
+  </script>
+  <style type="text/css">
+  canvas {border:1px solid black;}
+  </style>
 </head>
-<body>
+
+<!--body tag altered for Canvas experimentation-->
+<body onload="draw();">
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
 
 <!--Progress Bar-->
 <div class="progressBar">
+  <!--This is me experimenting with Canvas to draw Progress Bar-->
+  <canvas id="progressBar" width="303" height="42">
+    <script language="javascript">
+    function draw() {
+    var canvas = document.getElementById('progressBar');
+    if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+    var roundRectWidth=236;
+    var roundRectHeight=17;
+    var roundRectX=0;
+    var roundRectY=12;
+    var cornerRadius=8.25;
+
+    
+    //line
+    ctx.beginPath();
+    ctx.moveTo(0,21);
+    ctx.lineTo(302,21);
+    ctx.closePath();
+    ctx.stroke();
+
+    //small rectangle
+    ctx.fillRect(298,19,6,6);
+
+    //progress bar shape...we may have to use some if then magic
+    ctx.beginPath();
+    ctx.moveTo(roundRectX,roundRectY);
+    ctx.lineTo(roundRectX+roundRectWidth-cornerRadius,roundRectY);
+    ctx.arcTo(roundRectX+roundRectWidth, roundRectY, roundRectX + roundRectWidth, roundRectY +cornerRadius, cornerRadius);
+    ctx.lineTo(roundRectX+roundRectWidth, roundRectY+roundRectHeight);
+    ctx.stroke();
+
+
+    //ctx.fillRect(0,12,236,17)
+  }
+}
+    </script>
+  </canvas>
   <img src="images/Progress Bar Compare Goals.png"/>
   <div class="line"><!--Sarah you don't have this defined in CSS yet-->
 </div>
@@ -46,22 +100,26 @@
 
     <div class="legend">
       <div class="lineKey">
+      <img id="projectedPerformanceLine" src="images/projected-performance-line.png"/>
       Student's Projected Performance
       </div>
-      <button class="goalButton">
+      <button class="goalButton" id="moderateGoal">
+        <img src="images/moderate-goal-line.png"/>
         Moderate Goal
           <div class="moderateGoalText">
                 testing
-          </div>
+          </div>    
       </button>
-      <button class="goalButton">
-      Moderately Ambitious Goal
+      <button class="goalButton" id="moderatelyAmbitiousGoal">
+        <img src="images/moderately-ambitious-line.png"/>
+        Moderately Ambitious Goal
           <div class="moderateGoalText">
                 testing
           </div>
       </button>
-      <button class="goalButton">
-      Catch Up Keep Up Goal
+      <button class="goalButton" id="cukuGoal">
+      <img src="images/cuku-line.png"/>
+        Catch Up Keep Up Goal
           <div class="moderateGoalText">
                 testing
           </div>
